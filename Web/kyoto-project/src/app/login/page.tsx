@@ -24,7 +24,7 @@ export default function Login(){
                         width="497"
                         height="502"
                         className="flex w-1/2 m-auto"
-                        alt="Hatsune miku fofinha"
+                        alt="Hatsune miku dando oi"
                     />
                 </div>
             </div>

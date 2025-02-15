@@ -1,17 +1,19 @@
+"use client";
+import { useState } from "react";
 import Header from "@/app/componentes/headers/header";
 import SubHeader from "@/app/componentes/headers/sub-header"
-import Link from "next/link";
-
+import Login from "@/app/login/page"; // Importa a página de Login como um componente
+import Cadastro from "@/app/cadastro/page"
 
 export default function Home() {
-  return (
-      <div>
-        <Header />
-          <div>
-              <h1>menu provisorio para testes: </h1>
-              <Link href="/login">login</Link>
-          </div>
-        <SubHeader />
-      </div>
-  );
+    const [showLogin, setShowLogin] = useState(false);
+
+    return (
+        <div>
+            <Header />
+            <SubHeader />
+
+            <Cadastro />
+        </div>
+    );
 }
