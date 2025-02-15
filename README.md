@@ -40,13 +40,13 @@ Agradeço também a Pedro Miranda, o grande Pedrão por embarcar nesse projeto c
 # A construção do projeto
 O projeto Kyoto Mangás será multiplataforma, permitindo o acesso de qualquer lugar, seja via Web, Android ou iOS. Com isso, os usuários poderão aproveitar a experiência em diferentes dispositivos, garantindo mais flexibilidade e acessibilidade.
 
-### WEB
+### Web
 Na web o projeto será estruturado com PHP 8.0, com NextJS no front-end estilizado com Tailwind CSS e em algumas partes SASS. Integrando a comunicação HTPP: REST API e banco de dados postgres.
 
-### Aplicativo
+### Aplicativos
 Android e iOS: Será criado com o kotlin multiplataforma, utilizando o compose para front-end e TinySQL para armazenamento local.
 
-### Conteiner
+### Conteiners
 O projeto será conteinerizado no Docker para facilitar o deploy, garantindo mais praticidade e eficiência na distribuição e manutenção do sistema.
 
 
