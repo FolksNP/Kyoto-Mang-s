@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link"
 
 export default function Header(){
 
@@ -8,7 +9,7 @@ export default function Header(){
     return(
         <header className="w-full flex justify-around bg-cyan-600 p-3">
             <div className="logo">
-                <h1 className="text-white text-3xl">Kyoto Mangás</h1>
+                <h1 className="text-white text-3xl"><Link href="/">Kyoto Mangás</Link></h1>
             </div>
             <div className="menu">
                 <div
@@ -25,9 +26,11 @@ export default function Header(){
                     {isOpen && (
                         <div className="absolute left-0 w-40 bg-white border border-gray-300 shadow-lg rounded">
                             <ul className="flex flex-col">
-                                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                                    Login
-                                </li>
+                                <Link href="/cadastro">
+                                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                                        Cadastre-se
+                                    </li>
+                                </Link>
                                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                                     Dashboard
                                 </li>

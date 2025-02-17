@@ -1,5 +1,8 @@
 "use client";
 import { useState } from "react";
+import Header from "@/app/componentes/headers/header";
+import SubHeader from "@/app/componentes/headers/sub-header";
+import Footer from "@/app/componentes/footer";
 
 export default function Cadastro(){
     const [imagePreview, setImagePreview] = useState(null);
@@ -28,6 +31,10 @@ export default function Cadastro(){
     };
     return(
         <main className="w-full">
+
+            <Header />
+            <SubHeader />
+
             <div className="w-3/5 flex bg-blue-950 rounded-md shadow-2xl p-8 m-auto ">
                 <form action="" className="w-full flex flex-wrap columns-2">
                     <div className="w-2/3">
@@ -119,6 +126,8 @@ export default function Cadastro(){
                     </div>
                 </form>
             </div>
+
+            <Footer />
 
         </main>
     );
