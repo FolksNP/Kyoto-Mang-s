@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Header from "@/app/componentes/headers/header";
 import SubHeader from "@/app/componentes/headers/sub-header"
-import Footer from "@/app/componentes/footer/footer"
+import Footer from "@/app/componentes/footer"
 
 export default function Home() {
     const [showLogin, setShowLogin] = useState(false);

@@ -5,6 +5,8 @@ import SubHeader from "@/app/componentes/headers/sub-header";
 import Footer from "@/app/componentes/footer";
 
 export default function Cadastro(){
+
+    // funções para configurar a div que aparece a imagem de perfil.
     const [imagePreview, setImagePreview] = useState(null);
 
     const handleFileChange = (event) => {
@@ -29,7 +31,9 @@ export default function Cadastro(){
             reader.readAsDataURL(file);
         }
     };
+
     return(
+
         <main className="w-full">
 
             <Header />
@@ -58,6 +62,7 @@ export default function Cadastro(){
                         {/* entrada do email a ser cadastrado */}
                         <input
                             type="email"
+                            id="email"
                             name="email_usuario"
                             placeholder="Email"
                             className="w-full block p-2 mb-4 rounded"
@@ -67,6 +72,7 @@ export default function Cadastro(){
                         <input
                             type="email"
                             name="confirmar_email"
+                            id="confirmaEmail"
                             placeholder="Confirmar email"
                             className="w-full block p-2 mb-4 rounded"
                         />

@@ -26,9 +26,9 @@ export default function Header(){
                     {isOpen && (
                         <div className="absolute left-0 w-40 bg-white border border-gray-300 shadow-lg rounded">
                             <ul className="flex flex-col">
-                                <Link href="/cadastro">
+                                <Link href="/login">
                                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                                        Cadastre-se
+                                        Entrar
                                     </li>
                                 </Link>
                                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">

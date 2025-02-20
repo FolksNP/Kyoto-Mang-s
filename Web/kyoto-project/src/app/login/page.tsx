@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "@/app/componentes/headers/header";
 import SubHeader from "@/app/componentes/headers/sub-header"
 import Footer from "@/app/componentes/footer"
+import Link from "next/link";
 
 
 export default function Login(){
@@ -10,9 +11,9 @@ export default function Login(){
         <div className="w-full">
             <Header />
             <SubHeader />
-            <div className="formulario_login w-3/5 flex shadow-2xl m-auto mt-8">
-                <form action="" className=" bg-blue-950 w-1/3 text-white p-10 rounded-l-3xl">
-                    <h1 className="flex text-5xl mb-2">Kyoto</h1>
+            <div className="w-2/3 flex shadow-2xl rounded-3xl m-auto mt-8">
+                <form action="" className=" bg-blue-950 w-4/6 text-white p-10 rounded-l-3xl">
+                    <h1 className="flex text-5xl mb-3">Kyoto</h1>
                     <h1 className="flex text-5xl mb-8">Mangás</h1>
 
                     <label htmlFor="emailUser" className="w-full block">Email: </label>
@@ -33,7 +34,12 @@ export default function Login(){
                         placeholder="***********"
                     />
 
-                    <button type="submit" className="block px-4 py-2 text-white bg-cyan-700 rounded">LOGAR</button>
+                    <button type="submit" className="block w-full px-4 py-2 text-white bg-cyan-700 rounded">LOGAR</button>
+
+                    <div className="text-center mt-8 hover:text-yellow-400">
+                        <Link href="/cadastro">Não faz parte da comunidade ainda? Cadastre-se aqui!</Link>
+                    </div>
+
                 </form>
 
                 <div className="apresentacao w-2/3 bg-cyan-100 content-center justify-center p-10 rounded-r-3xl">

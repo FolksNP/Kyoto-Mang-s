@@ -12,14 +12,14 @@ export default function Footer() {
 
             <div className="flex w-full justify-around py-4 px-24 items-center">
 
-                <div className="w-1/4">
-                    <p className="text-xl">Contato e</p>
-                    <p className="text-xl">Endereços</p>
-                    <p>Endereço: Avenida Não Existente, N°: 110101 - 01101-010 - São Paulo</p>
-                    <p>Whatsapp: 11 90100-1101</p>
-                    <p>Email comercial: comercial@kyotomangas.com.br</p>
-                    <p>Email do suporte: suporte@kyotomangas.com.br</p>
-                </div>
+                {/*<div className="w-1/4">*/}
+                {/*    <p className="text-xl">Contato e</p>*/}
+                {/*    <p className="text-xl">Endereços</p>*/}
+                {/*    <p>Endereço: Avenida Não Existente, N°: 110101 - 01101-010 - São Paulo</p>*/}
+                {/*    <p>Whatsapp: 11 90100-1101</p>*/}
+                {/*    <p>Email comercial: comercial@kyotomangas.com.br</p>*/}
+                {/*    <p>Email do suporte: suporte@kyotomangas.com.br</p>*/}
+                {/*</div>*/}
 
 
 
@@ -31,6 +31,11 @@ export default function Footer() {
                         <li>Twitter (x): Kyoto_Project</li>
                         <li>Linkedin: Kyoto Mangás - Literatura</li>
                     </ul>
+                </div>
+
+                <div className="w-1/4">
+                    <p className="text-xl text-center">Kyoto Mangás</p>
+                    <p className="text-xl text-center">ねえブラジル人、これを何かだと思って翻訳したよね？</p>
                 </div>
 
                 <div className="w-1/4 text-center">
@@ -48,13 +53,6 @@ export default function Footer() {
                         <a href="https://editoraconrad.com.br/" className="text-reset">Editora Conrad</a>
                     </p>
                 </div>
-
-                <div className="w-1/4">
-                    <p className="text-xl text-center">Kyoto Mangás</p>
-                    <p className="text-xl text-center">ねえブラジル人、これを何かだと思って翻訳したよね？</p>
-                </div>
-
-
             </div>
 
             <div className="w-full mt-8 p-4 border-t-2 border-white text-center">
